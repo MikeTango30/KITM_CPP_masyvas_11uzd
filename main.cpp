@@ -104,7 +104,7 @@ int rastiAntraDidziausia(int duomenuKiekis, int skaiciuMasyvas[])
     int did = rastiDidziausia(duomenuKiekis, laikinas);
     for (int i = 0; i < duomenuKiekis; i++) {
         if (laikinas[i] == did) {
-            laikinas[i] = -1 * did; //didziausia padarome nedidziausiu
+            laikinas[i] = *min_element(laikinas, laikinas + duomenuKiekis); //didziausia padarome maziausiu
         }
     }
 
