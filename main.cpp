@@ -12,7 +12,7 @@ int rastiDidziausia(int duomenuKiekis, int skaiciuMasyvas[]);
 int rastiAntraMaziausia(int duomenuKiekis, int skaiciuMasyvas[]);
 int rastiAntraDidziausia(int duomenuKiekis, int skaiciuMasyvas[]);
 void rastiKeiciamuElementuIndeksus(int duomenuKiekis, int skaiciuMasyvas[], int skaicius, int keiciamiElementai[], int &indeksuKiekis);
-int pakeistiAntrusDidziausius(int skaiciuMasyvas[], int indeksuKiekis, int keiciamiElementai[], int sandauga);
+void pakeistiAntrusDidziausius(int skaiciuMasyvas[], int indeksuKiekis, int keiciamiElementai[], int sandauga);
 void isvestiDuomenis(int duomenuKiekis, int skaiciuMasyvas[], string txt);
 
 int main()
@@ -113,7 +113,7 @@ int rastiAntraDidziausia(int duomenuKiekis, int skaiciuMasyvas[])
     return did;
 }
 
-int pakeistiAntrusDidziausius(int skaiciuMasyvas[], int indeksuKiekis, int keiciamiElementai[], int sandauga)
+void pakeistiAntrusDidziausius(int skaiciuMasyvas[], int indeksuKiekis, int keiciamiElementai[], int sandauga)
 {
     for (int i = 0; i < indeksuKiekis; i++) {
         skaiciuMasyvas[keiciamiElementai[i]] = sandauga;
